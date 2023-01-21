@@ -1,0 +1,8 @@
+[Unit]
+Description=Runs NotesTionSync, a project to sync Google Drive notes with Notion, every 15 minutes.
+Requires=run_notestion_sync.service
+[Timer]
+Unit=run_notestion_sync.service
+OnCalendar=*:0/15
+[Install]
+WantedBy=timers.target

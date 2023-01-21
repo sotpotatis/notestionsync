@@ -1,0 +1,19 @@
+[notion]
+    auth_token="" #Auth token for Notion
+    upload_database_id = "" #ID of database where documents are uploaded
+    document_name_field_name = "Name" # Name for the field to set the page name
+    google_drive_id_field_name = "Google Drive ID" # Name for the field where the Google Drive ID is stored
+    # Set up tag types here. See the documentation for more information. Below is an example.
+    tag_types.subject.name = "Subject"
+    tag_types.subject.notion_type = "multi_select"
+    tag_types.note_type.name="Type"
+    tag_types.note_type.notion_type = "multi_select"
+[google_drive]
+    token_file="token.json" #File path for token file. You don't have to change this as long as you put the token file in the same directory of the script.
+    credentials_file="credentials.json" #File path for OAuth Credentials (client ID, client secret). You don't have to change this.
+    scopes = ["https://www.googleapis.com/auth/drive"] #Don't remove scopes from here unless you know what you're doing!
+    upload_folder_id = "" #ID of folder where documents are uploaded
+[post_sync]
+    enabled=false #Set to true to enable actions after a document has been synced
+    enabled_modules=["discord"] #This sends a message to a Discord channel when document has been synced
+    discord.webhook_url="https://discord.com/api/webhooks/<SECRET STUFF HERE>"

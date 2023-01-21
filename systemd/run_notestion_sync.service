@@ -1,0 +1,8 @@
+[Unit]
+Description=Runs NotesTionSync, a project to sync Google Drive notes with Notion.
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/run_notestion_sync.sh
+[Install]
+RequiredBy=multi-user.target
+WantedBy=run_notestion_sync.timer

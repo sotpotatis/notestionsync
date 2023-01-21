@@ -1,0 +1,54 @@
+{
+  "ma": { // ma - "math"
+    "u": { // u - "uppgifter" (assignments)
+      "notion_tags": [{ // Subject -> Math
+        "type": "subject",
+        "value": "<Math subject Notion tag ID>"
+      },
+      { // Type -> Assignment
+        "type": "note_type",
+        "value": "<Assignment note type Notion tag ID>"
+      },
+      { // Media type - Digital scan
+        "type": "media_type",
+        "value": "<Digital scan type Notion tag ID>"
+      }],
+      "folder_id": "<Math assignment folder ID>"
+    },
+    "g": { // g - "genomgångar" (lectures)
+      "notion_tags": [
+        { // Subject -> Math
+        "type": "subject",
+        "value": "<Math subject Notion tag ID>"
+      },
+      { // Type -> Lecture
+        "type": "note_type",
+        "value": "<Lecture type Notion tag ID>"
+      },
+      { // Media type - Digital scan
+        "type": "media_type",
+        "value": "<Digital scan type Notion tag ID>"
+      }
+      ],
+      "folder_id":  "<Math lecture folder Google Drive ID>"
+    },
+    "fallback": { // Fallback if no subtags are detected
+      "notion_tags": [{ // Subject - Math
+        "type": "subject",
+        "value": "Math subject Notion tag ID"
+      },
+      { // Media type - Digital scan
+        "type": "media_type",
+        "value": "<Digital scan type Notion tag ID>"
+      }],
+      "folder_id":  "<Math fallback folder Google Drive ID>"
+    }
+  },
+  "fallback": { // Fallback for everything if no tags are detected
+    "notion_tags": [{ // Media type - Digital scan
+        "type": "media_type",
+        "value": "<Digital scan type Notion tag ID>"
+      }],
+    "folder_id":  "<Fallback folder Google Drive ID>"
+  }
+}
