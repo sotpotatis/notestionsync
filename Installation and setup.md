@@ -10,6 +10,9 @@ This document will guide you to setting up your own note syncing with Notion. It
 Clones the repository:
 * `git clone https://github.com/sotpotatis/notestionsync`
 
+Using Linux?
+* `sudo apt install python3-testresources`
+
 Installs the requirements:
 * `cd notestionsync && pip install -r requirements.txt`
 
