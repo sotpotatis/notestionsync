@@ -26,7 +26,7 @@ class DiscordPostSync(PostSync):
         :param format: The message format of the embed message.
 
         :param variables: The variables to include in the formatting. Normally, this would be the self variables
-        of the DiscordPostSynC object."""
+        of the DiscordPostSync object."""
         format_parameters = {
             "title": variables["file_title"],
             "drive_id": variables["file_google_drive_id"],
